@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch with Labeled Lap Popup</title>
+    <link rel="stylesheet" href="sw.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stopwatch</h1>
+        <div id="display">00:00:00.00</div>
+        <div class="buttons">
+            <button id="startPause">Start</button>
+            <button id="reset">Reset</button>
+            <button id="lap">Lap</button>
+        </div>
+
+        <div class="lap-container">
+            <h2>Lap Times</h2>
+            <ul id="laps"></ul>
+        </div>
+    </div>
+
+    <!-- Lap Name Popup Modal -->
+    <div id="lapModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Save Lap</h2>
+            <input type="text" id="lapLabel" placeholder="Enter lap name or task" />
+            <button id="saveLap">Save Lap</button>
+        </div>
+    </div>
+
+    <!-- Background Watermark -->
+    <div id="watermark"> CREATED BY SANKALP0607</div>
+
+    <script src="sw.js"></script>
+</body>
+</html>
